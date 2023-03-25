@@ -3,6 +3,7 @@
 ## Whats included?
 
 - Standard config base;
+- React config base;
 - Expo config base;
 - Next.js config base;
 - Node config base;
@@ -31,6 +32,7 @@ $ pnpm i eslint @fellipeutaka/eslint-config -D
 ```json
 {
   "extends": "@fellipeutaka/eslint-config/next"
+  // "extends": "@fellipeutaka/eslint-config/react"
   // "extends": "@fellipeutaka/eslint-config/expo"
   // "extends": "@fellipeutaka/eslint-config/node"
 }

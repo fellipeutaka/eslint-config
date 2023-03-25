@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc",
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "./base",
+    "plugin:react/jsx-runtime",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "plugins": ["react", "jsx-a11y"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
