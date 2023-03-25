@@ -4,7 +4,11 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["./base", "plugin:react/jsx-runtime"],
+  "extends": [
+    "./base",
+    "plugin:react/jsx-runtime",
+    "plugin:react-native-a11y/all"
+  ],
   "plugins": ["react"],
   "settings": {
     "react": {

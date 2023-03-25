@@ -11,6 +11,7 @@ specifiers:
   eslint-plugin-n: latest
   eslint-plugin-promise: latest
   eslint-plugin-react: latest
+  eslint-plugin-react-native-a11y: ^3.3.0
   eslint-plugin-unused-imports: latest
   prettier: '*'
 
@@ -25,6 +26,7 @@ dependencies:
   eslint-plugin-n: 15.6.1
   eslint-plugin-promise: 6.1.1
   eslint-plugin-react: 7.32.2
+  eslint-plugin-react-native-a11y: 3.3.0
   eslint-plugin-unused-imports: 2.0.0_7a3pxf2zfrf6xwyzgv34odyvv4
   prettier: 2.8.7
 
@@ -765,6 +767,17 @@ packages:
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
+    dev: false
+
+  /eslint-plugin-react-native-a11y/3.3.0:
+    resolution: {integrity: sha512-21bIs/0yROcMq7KtAG+OVNDWAh8M+6scII0iXcO3i9NYHe2xZ443yPs5KSUMSvQJeRLLjuKB7V5saqNjoMWDHA==}
+    engines: {node: '>=12.0'}
+    peerDependencies:
+      eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
+    dependencies:
+      '@babel/runtime': 7.21.0
+      ast-types-flow: 0.0.7
+      jsx-ast-utils: 3.3.3
     dev: false
 
   /eslint-plugin-react/7.32.2:
