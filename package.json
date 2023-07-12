@@ -1,31 +1,56 @@
 {
   "name": "@fellipeutaka/eslint-config",
-  "version": "1.4.0",
-  "description": "ESLint configuration for TypeScript projects",
+  "version": "1.5.0",
+  "description": "ESLint configuration",
   "private": false,
-  "homepage": "https://github.com/fellipeutaka/eslint-config-ts",
+  "homepage": "https://github.com/fellipeutaka/eslint-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fellipeutaka/eslint-config-ts.git"
+    "url": "https://github.com/fellipeutaka/eslint-config.git"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "publish": "changeset publish",
+    "prepare": "husky install"
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
-    "eslint-config-next": "*",
-    "eslint-config-prettier": "*",
+    "eslint-config-next": "latest",
+    "eslint-config-prettier": "latest",
     "eslint-plugin-import": "latest",
     "eslint-plugin-import-helpers": "latest",
     "eslint-plugin-jsx-a11y": "latest",
     "eslint-plugin-n": "latest",
     "eslint-plugin-promise": "latest",
     "eslint-plugin-react": "latest",
-    "eslint-plugin-react-native-a11y": "latest",
-    "eslint-plugin-unused-imports": "latest",
-    "prettier": "*"
+    "eslint-plugin-unused-imports": "latest"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.44.0",
+    "typescript": "^5.1.2",
+    "husky": "^8.0.0"
   },
   "peerDependencies": {
     "eslint": "*",
     "typescript": "*"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
