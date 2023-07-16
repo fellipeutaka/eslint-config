@@ -1,6 +1,6 @@
 {
   "name": "@fellipeutaka/eslint-config",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "ESLint configuration",
   "private": false,
   "homepage": "https://github.com/fellipeutaka/eslint-config",
