@@ -1,6 +1,6 @@
 {
   "name": "@fellipeutaka/eslint-config",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "ESLint configuration",
   "private": false,
   "homepage": "https://github.com/fellipeutaka/eslint-config",
@@ -17,7 +17,7 @@
     "email": "fellipeutaka@gmail.com"
   },
   "scripts": {
-    "publish": "changeset publish",
+    "release": "changeset publish",
     "prepare": "husky install"
   },
   "dependencies": {
