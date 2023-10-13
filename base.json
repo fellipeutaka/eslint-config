@@ -6,22 +6,8 @@
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "import-helpers", "unused-imports"],
+  "plugins": ["@typescript-eslint", "import-helpers"],
   "rules": {
-    "quotes": ["warn", "double"],
-    "semi": ["warn", "always"],
-    "arrow-parens": ["warn", "always"],
-    "@typescript-eslint/no-unused-vars": "off",
-    "unused-imports/no-unused-imports-ts": "warn",
-    "unused-imports/no-unused-vars": "warn",
-    "@typescript-eslint/array-type": "error",
-    "prefer-const": "error",
-    "no-console": [
-      "warn",
-      {
-        "allow": ["warn", "error"]
-      }
-    ],
     "import-helpers/order-imports": [
       "warn",
       {
