@@ -1,6 +1,6 @@
 {
   "name": "@fellipeutaka/eslint-config",
-  "version": "1.8.1",
+  "version": "1.9.1",
   "description": "ESLint configuration",
   "private": false,
   "homepage": "https://github.com/fellipeutaka/eslint-config",
@@ -31,7 +31,7 @@
     "eslint-plugin-n": "latest",
     "eslint-plugin-promise": "latest",
     "eslint-plugin-react": "latest",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-react-hooks": "latest"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
@@ -39,9 +39,9 @@
     "@commitlint/config-conventional": "^17.6.3",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.44.0",
+    "eslint": "^8.51.0",
     "husky": "^8.0.0",
-    "typescript": "^5.1.2"
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "eslint": "*",
