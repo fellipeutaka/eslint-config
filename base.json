@@ -3,11 +3,14 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "import-helpers"],
+  "plugins": ["@typescript-eslint"],
   "rules": {
+    "import/no-default-export": "error",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
@@ -16,20 +19,28 @@
         "caughtErrorsIgnorePattern": "^_"
       }
     ],
-    "import-helpers/order-imports": [
-      "warn",
+    "import/order": [
+      "error",
       {
-        "newlinesBetween": "always",
+        "newlines-between": "always",
         "groups": [
-          "/^react/",
-          "module",
-          "/^~/",
-          ["parent", "sibling", "index"]
+          [
+            {
+              "pattern": "react",
+              "group": "external"
+            },
+            "builtin"
+          ],
+          "external",
+          "internal",
+          ["parent", "sibling", "index"],
+          ["type", "object"]
         ],
         "alphabetize": {
           "order": "asc",
-          "ignoreCase": true
-        }
+          "caseInsensitive": true
+        },
+        "warnOnUnassignedImports": true
       }
     ]
   }

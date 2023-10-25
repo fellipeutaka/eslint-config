@@ -1,6 +1,6 @@
 {
   "name": "@fellipeutaka/eslint-config",
-  "version": "1.9.1",
+  "version": "1.10.0",
   "description": "ESLint configuration",
   "private": false,
   "homepage": "https://github.com/fellipeutaka/eslint-config",
@@ -25,8 +25,7 @@
     "@typescript-eslint/parser": "latest",
     "eslint-config-next": "latest",
     "eslint-config-prettier": "latest",
-    "eslint-plugin-import": "latest",
-    "eslint-plugin-import-helpers": "latest",
+    "eslint-plugin-import": "npm:eslint-plugin-i@^2.28.1",
     "eslint-plugin-jsx-a11y": "latest",
     "eslint-plugin-n": "latest",
     "eslint-plugin-promise": "latest",

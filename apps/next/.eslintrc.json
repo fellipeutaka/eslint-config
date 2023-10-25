@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": ["@fellipeutaka/eslint-config/next"]
+}

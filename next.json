@@ -4,5 +4,17 @@
   "plugins": ["jsx-a11y"],
   "rules": {
     "@next/next/no-html-link-for-pages": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "pages/*",
+        "pages/api/*",
+        "app/**/{page,layout,template,loading,error}.*"
+      ],
+      "rules": {
+        "import/no-default-export": "off"
+      }
+    }
+  ]
 }
