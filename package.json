@@ -1,59 +1,41 @@
 {
-  "name": "@fellipeutaka/eslint-config",
-  "version": "1.10.0",
-  "description": "ESLint configuration",
-  "private": false,
-  "homepage": "https://github.com/fellipeutaka/eslint-config",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fellipeutaka/eslint-config.git"
-  },
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
-  "author": {
-    "name": "Fellipe Utaka",
-    "email": "fellipeutaka@gmail.com"
-  },
+  "private": true,
   "scripts": {
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rimraf node_modules .turbo",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "version-packages": "changeset version",
     "release": "changeset publish",
     "prepare": "husky install"
   },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "latest",
-    "@typescript-eslint/parser": "latest",
-    "eslint-config-next": "latest",
-    "eslint-config-prettier": "latest",
-    "eslint-plugin-import": "npm:eslint-plugin-i@^2.28.1",
-    "eslint-plugin-jsx-a11y": "latest",
-    "eslint-plugin-n": "latest",
-    "eslint-plugin-promise": "latest",
-    "eslint-plugin-react": "latest",
-    "eslint-plugin-react-hooks": "latest"
-  },
   "devDependencies": {
-    "@changesets/cli": "^2.26.1",
-    "@commitlint/cli": "^17.6.3",
-    "@commitlint/config-conventional": "^17.6.3",
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.2",
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
+    "@commitlint/cz-commitlint": "^17.8.0",
+    "@fellipeutaka/eslint-config": "^1.9.1",
     "commitizen": "^4.3.0",
-    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.51.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.1",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "turbo": "latest",
     "typescript": "^5.2.2"
   },
-  "peerDependencies": {
-    "eslint": "*",
-    "typescript": "*"
-  },
-  "peerDependenciesMeta": {
-    "typescript": {
-      "optional": true
-    }
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --max-warnings 0",
+      "prettier -w"
+    ],
+    "*.{md,json}": [
+      "prettier -w"
+    ]
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "@commitlint/cz-commitlint"
     }
   }
 }

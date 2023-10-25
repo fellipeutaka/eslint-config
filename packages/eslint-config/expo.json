@@ -7,12 +7,16 @@
   "extends": [
     "./base",
     "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
     "plugin:react-native-a11y/all"
   ],
   "plugins": ["react"],
-  "settings": {
-    "react": {
-      "version": "detect"
+  "overrides": [
+    {
+      "files": ["App.tsx"],
+      "rules": {
+        "import/no-default-export": "off"
+      }
     }
-  }
+  ]
 }
