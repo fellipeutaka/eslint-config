@@ -1,5 +1,11 @@
 # @fellipeutaka/eslint-config
 
+## 1.12.0
+
+### Minor Changes
+
+- add tailwind config
+
 ## 1.11.0
 
 ### Minor Changes
