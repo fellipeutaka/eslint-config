@@ -1,5 +1,11 @@
 # @fellipeutaka/eslint-config
 
+## 1.12.1
+
+### Patch Changes
+
+- remove @/\* from import helpers
+
 ## 1.12.0
 
 ### Minor Changes
