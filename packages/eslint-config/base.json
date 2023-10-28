@@ -43,5 +43,13 @@
     "coverage",
     ".eslintrc.js",
     ".eslintrc.cjs"
+  ],
+  "overrides": [
+    {
+      "files": ["*.config.{js,mjs,ts}"],
+      "rules": {
+        "import/no-default-export": "off"
+      }
+    }
   ]
 }

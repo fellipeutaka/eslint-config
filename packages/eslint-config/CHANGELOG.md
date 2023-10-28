@@ -1,5 +1,11 @@
 # @fellipeutaka/eslint-config
 
+## 1.12.2
+
+### Patch Changes
+
+- fix files to ignore export default
+
 ## 1.12.1
 
 ### Patch Changes

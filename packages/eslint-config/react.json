@@ -11,13 +11,5 @@
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended"
   ],
-  "plugins": ["react", "jsx-a11y"],
-  "overrides": [
-    {
-      "files": ["vite.config.ts"],
-      "rules": {
-        "import/no-default-export": "off"
-      }
-    }
-  ]
+  "plugins": ["react", "jsx-a11y"]
 }
