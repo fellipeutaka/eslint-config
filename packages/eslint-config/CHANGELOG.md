@@ -1,5 +1,11 @@
 # @fellipeutaka/eslint-config
 
+## 1.12.4
+
+### Patch Changes
+
+- Fix React version
+
 ## 1.12.3
 
 ### Patch Changes
