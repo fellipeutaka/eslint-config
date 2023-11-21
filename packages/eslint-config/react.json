@@ -19,5 +19,10 @@
         "namedComponents": "function-declaration"
       }
     ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
