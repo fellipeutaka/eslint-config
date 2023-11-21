@@ -7,8 +7,8 @@
       "files": [
         "pages/.{js,jsx,tsx}",
         "src/pages/.{js,jsx,tsx}",
-        "app/**/{page,layout,template,loading,error}.{js,jsx,tsx}",
-        "src/app/**/{page,layout,template,loading,error}.{js,jsx,tsx}"
+        "app/**/{page,layout,template,loading,error,not-found}.{js,jsx,tsx}",
+        "src/app/**/{page,layout,template,loading,error,not-found}.{js,jsx,tsx}"
       ],
       "rules": {
         "import/no-default-export": "off"

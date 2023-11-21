@@ -11,5 +11,13 @@
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended"
   ],
-  "plugins": ["react", "jsx-a11y"]
+  "plugins": ["react", "jsx-a11y"],
+  "rules": {
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "function-declaration"
+      }
+    ]
+  }
 }
